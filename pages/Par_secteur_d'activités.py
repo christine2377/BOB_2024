@@ -4,6 +4,11 @@ warnings.filterwarnings('ignore')
 import pandas as pd
 import streamlit as st
 
+st.set_page_config(
+    page_title="BOB 2024 - Par secteur d'activités",
+    page_icon="🧊",
+    layout="wide")
+
 st.markdown("# Par Secteur d'activités")
 st.sidebar.markdown("# Par Secteur d'activités")
 
