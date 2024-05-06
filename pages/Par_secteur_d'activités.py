@@ -120,7 +120,7 @@ styled_df2 = df2.style.set_properties(**{'text-align': 'center'})
 styled_df3 = df3.style.set_properties(**{'text-align': 'center'})
 styled_df4 = df4.style.set_properties(**{'text-align': 'center'})
 
-st.table(styled_df)
+
 "**Quelles sont les raisons de votre engagement bénévole aujourd'hui dans cette cette association ?** *Plusieurs réponses possibles*"
 #st.dataframe(df,use_container_width = True)
 st.table(styled_df)
