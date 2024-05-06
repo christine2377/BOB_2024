@@ -4,6 +4,10 @@ warnings.filterwarnings('ignore')
 import pandas as pd
 import streamlit as st
 
+st.set_page_config(
+    page_title="BOB 2024",
+    page_icon="🧊",
+    layout="wide")
 
 st.markdown("# Baromètre d'Opinion des Bénévoles 2024")
 st.sidebar.markdown("# Présentation")
