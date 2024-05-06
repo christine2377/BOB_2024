@@ -120,14 +120,20 @@ styled_df2 = df2.style.set_properties(**{'text-align': 'center'})
 styled_df3 = df3.style.set_properties(**{'text-align': 'center'})
 styled_df4 = df4.style.set_properties(**{'text-align': 'center'})
 
+st.table(styled_df)
 "**Quelles sont les raisons de votre engagement bénévole aujourd'hui dans cette cette association ?** *Plusieurs réponses possibles*"
-st.dataframe(styled_df,use_container_width = True)
+#st.dataframe(df,use_container_width = True)
+st.table(styled_df)
 "**Vous diriez, à propos de votre engagement dans cette association, qu'il est synonyme, avant tout, de :**"
-st.dataframe(styled_df1,use_container_width = True)
-"**Vous avez le sentiment que votre activité bénévole, vous permet :** *Plusieurs réponses possible*"
-st.dataframe(styled_df2,use_container_width = True)
+#st.dataframe(styled_df1,use_container_width = True)
+st.table(styled_df1)
+"**Vous avez le sentiment que votre activité bénévole, vous permet :** *Plusieurs réponses possibles*"
+#st.dataframe(styled_df2,use_container_width = True)
+st.table(styled_df2)
 "**Si vous éprouvez des déceptions, sur quels thèmes portent-elles ?** *Plusieurs réponses possibles*"
-st.dataframe(styled_df3,use_container_width = True)
-"**Quelles seraient vos attentes pour bien vivre votre activité bénévole ?** *Plusieurs réponses possible*"
-st.dataframe(styled_df4,use_container_width = True)
+#st.dataframe(styled_df3,use_container_width = True)
+st.table(styled_df3)
+"**Quelles seraient vos attentes pour bien vivre votre activité bénévole ?** *Plusieurs réponses possibles*"
+#st.dataframe(styled_df4,use_container_width = True)
+st.table(styled_df4)
 "**Attendez-vous de votre association qu'elle vous aide à développer ces savoir-faire et ces savoir-être ?**"
