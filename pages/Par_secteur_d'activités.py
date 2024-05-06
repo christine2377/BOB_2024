@@ -159,4 +159,4 @@ st.table(styled_df3)
 "**Quelles seraient vos attentes pour bien vivre votre activité bénévole ?** *Plusieurs réponses possibles*"
 #st.dataframe(styled_df4,use_container_width = True)
 st.table(styled_df4)
-"**Attendez-vous de votre association qu'elle vous aide à développer ces savoir-faire et ces savoir-être ?**"
+
