@@ -2,7 +2,6 @@ import warnings
 warnings.filterwarnings('ignore')
 
 import pandas as pd
-import openpyxl
 import streamlit as st
 
 st.markdown("# Par Secteur d'activités")
