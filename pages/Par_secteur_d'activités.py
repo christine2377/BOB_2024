@@ -116,7 +116,22 @@ df4 = pd.DataFrame({"Social": ["30%","37%","24%","22%","24%","14%","12%","16%","
                         "Une plus grande attention portée à mon activité par les instances dirigeantes",
                         "Une définition plus précise de ma mission"])
 
-
+# Attendez-vous de votre association qu'elle vous aide à développer ces savoir-être ?
+df5 = pd.DataFrame({"Social" : ["5%","50%","14%","23%","8%","100%"],
+                    "Santé" : ["13%","43%","16%","18%","10%","100%"],
+                    "Solidarié internationale" : ["4%","47%","19%","19%","11%","100%"],
+                    "Sport" : ["3%","62%","17%","16%","3%","100%"],
+                    "Culture" : ["7%","62%","12%","15%","4%","100%"],
+                    "Loisirs" : ["6%","45%","20%","23%","6%","100%"],
+                    "Formation, emploi, économie" : ["6%","54%","9%","23%","7%","100%"],
+                    "Jeunesse, éducation populaire" : ["7%","52%","17%","20%","5%","100%"],
+                    "Environnement" : ["9%","42%","18%","26%","6%","100%"]},
+                   index= ["Non réponse",
+                           "Oui, elle le fait déjà",
+                           "Oui, j'aimerai bien",
+                           "Non, pas vraiment",
+                           "Non, je ne vois pas comment elle pourrait m'aider sur ce plan",
+                           "Total"])
 
 
 styled_df = df.style.set_properties(**{'text-align': 'center'})
@@ -124,6 +139,7 @@ styled_df1 = df1.style.set_properties(**{'text-align': 'center'})
 styled_df2 = df2.style.set_properties(**{'text-align': 'center'})
 styled_df3 = df3.style.set_properties(**{'text-align': 'center'})
 styled_df4 = df4.style.set_properties(**{'text-align': 'center'})
+styled_df5 = df5.style.set_properties(**{'text-align': 'center'})
 
 
 "**Quelles sont les raisons de votre engagement bénévole aujourd'hui dans cette cette association ?** *Plusieurs réponses possibles*"
@@ -135,6 +151,8 @@ st.table(styled_df1)
 "**Vous avez le sentiment que votre activité bénévole, vous permet :** *Plusieurs réponses possibles*"
 #st.dataframe(styled_df2,use_container_width = True)
 st.table(styled_df2)
+"**Attendez-vous de votre association qu'elle vous aide à développer ces savoir-faire et ces savoir-être ?**"
+st.table(styled_df5)
 "**Si vous éprouvez des déceptions, sur quels thèmes portent-elles ?** *Plusieurs réponses possibles*"
 #st.dataframe(styled_df3,use_container_width = True)
 st.table(styled_df3)
