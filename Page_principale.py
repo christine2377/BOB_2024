@@ -9,7 +9,7 @@ st.set_page_config(
     page_icon="🧊",
     layout="wide")
 
-st.image('Icone.png',width = 200)
+st.image('RSIEDH.png',width = 500)
 
 st.markdown("# Baromètre d'Opinion des Bénévoles 2024")
 st.sidebar.markdown("# Présentation")
