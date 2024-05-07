@@ -4,13 +4,15 @@ warnings.filterwarnings('ignore')
 import pandas as pd
 import streamlit as st
 
-st.markdown("# Par tranche d'âges")
-st.sidebar.markdown("# Par tranche d'âges")
-
 st.set_page_config(
     page_title="BOB 2024 - Par tranche d'âges",
     page_icon="🧊",
     layout="wide")
+
+st.markdown("# Par tranche d'âges")
+st.sidebar.markdown("# Par tranche d'âges")
+
+
 
 fichier = "BOB2024-Dashboard.xlsx"
 sheet = "Tranche_ages"
