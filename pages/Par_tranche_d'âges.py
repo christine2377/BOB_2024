@@ -55,7 +55,7 @@ styled_table4 = table4.style.set_properties(**{'text-align': 'center'})
 styled_table5 = table5.style.set_properties(**{'text-align': 'center'})
 
 
-"**Quelles sont les raisons de votre engagement bénévole aujourd'hui dans cette cette association ?** *Plusieurs réponses possibles*"
+"**Quelles sont les raisons de votre engagement bénévole aujourd'hui dans cette association ?** *Plusieurs réponses possibles*"
 #st.dataframe(df,use_container_width = True)
 st.table(styled_table)
 "**Vous diriez, à propos de votre engagement dans cette association, qu'il est synonyme, avant tout, de :**"
