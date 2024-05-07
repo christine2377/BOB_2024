@@ -20,9 +20,14 @@ st.sidebar.markdown("# Présentation")
 ("Les résultats téléchargeables ici, par secteur d’activités et par tranche d’âge, viennent en complément de ceux présentés dans La France bénévole "
  "2024, en ligne sur www.recherches-solidarites.org")
 
-("D’autres résultats sont disponibles, sur demande, auprès de Marie.")
+("D’autres résultats sont disponibles, sur demande, auprès de [Marie](mailto:marie.duros@recherches-solidarites.org).")
+
+("")
+("")
+("")
 
 ("*Cette enquête du Baromètre d’Opinion des Bénévoles de Recherches & Solidarités est réalisée, cette année, en coopération avec l’Institut Européen "
  "de Développement Humain. Elle a bénéficié d’une large diffusion grâce à la mobilisation des partenaires suivants :*")
 
-st.image("BandeauTempo2024.png")
+
+st.image("BandeauTempo2024.png", width = 900)
