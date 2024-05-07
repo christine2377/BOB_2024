@@ -14,6 +14,7 @@ st.image('RSIEDH.png',width = 500)
 st.markdown("# Baromètre d'Opinion des Bénévoles 2024")
 st.sidebar.markdown("# Présentation")
 
+("") 
 ("Baromètre d'Opinion des Bénévoles, en ligne du 15 février au 22 avril 2024, auprès de 3 717 bénévoles de profils et d'horizons diversifiés. "
  "Cet échantillon robuste permet de réaliser des analyses croisées et de tenir compte de la diversité des situations et des formes d'engement.")
 
