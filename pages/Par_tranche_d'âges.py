@@ -9,7 +9,7 @@ st.set_page_config(
     page_icon="🧊",
     layout="wide")
 
-st.markdown("# Par tranche d'âges")
+st.markdown("# Résultats par tranche d'âges")
 st.sidebar.markdown("# Par tranche d'âges")
 
 
