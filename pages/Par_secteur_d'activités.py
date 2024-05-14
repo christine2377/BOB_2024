@@ -9,7 +9,7 @@ st.set_page_config(
     page_icon="🧊",
     layout="wide")
 
-st.markdown("# Par Secteur d'activités")
+st.markdown("# Résultats par secteurs d'activités")
 st.sidebar.markdown("# Par Secteur d'activités")
 
 fichier = "BOB2024-Dashboard.xlsx"
