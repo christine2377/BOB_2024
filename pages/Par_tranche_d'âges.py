@@ -92,33 +92,33 @@ def to_excel(tables, questions):
     output = BytesIO()
     with pd.ExcelWriter(output, engine='xlsxwriter') as writer:
         workbook = writer.book
-
+        
         # Formats
         bold_format = workbook.add_format({'bold': True})
         border_format = workbook.add_format({'border': 1})
-
-        for table, question, sheet_name in zip(tables, questions,
-                                               ["Tableau1", "Tableau2", "Tableau3", "Tableau4", "Tableau5",
-                                                "Tableau6"]):
+        
+        for table, question, sheet_name in zip(tables, questions, ["Tableau1", "Tableau2", "Tableau3", "Tableau4", "Tableau5", "Tableau6"]):
             # Créer une feuille
             worksheet = workbook.add_worksheet(sheet_name)
-
+            
             # Écrire la question en gras
             worksheet.write(0, 0, question, bold_format)
-
+            
             # Laisser une ligne vide entre la question et le tableau
             empty_row = 1
-
-            # Écrire les noms des colonnes en gras avec bordures
+            
+            # Écrire les index et les noms des colonnes en gras avec bordures
+            worksheet.write(empty_row + 1, 0, table.index.name, bold_format)
             for idx, col in enumerate(table.columns):
-                worksheet.write(empty_row + 1, idx, col, bold_format)
-                worksheet.set_column(idx, idx, 20)  # Ajuster la largeur de la colonne
-
+                worksheet.write(empty_row + 1, idx + 1, col, bold_format)
+                worksheet.set_column(idx + 1, idx + 1, 20)  # Ajuster la largeur de la colonne
+            
             # Écrire les données du tableau avec bordures
-            for row_idx, row in enumerate(table.itertuples(index=True, name=None)):
+            for row_idx, (index, row) in enumerate(table.iterrows()):
+                worksheet.write(row_idx + empty_row + 2, 0, index, border_format)
                 for col_idx, value in enumerate(row):
-                    worksheet.write(row_idx + empty_row + 2, col_idx, value, border_format)
-
+                    worksheet.write(row_idx + empty_row + 2, col_idx + 1, value, border_format)
+                    
     return output.getvalue()
     
 # Bouton de téléchargement
