@@ -115,7 +115,7 @@ def to_excel(tables, questions):
                 worksheet.set_column(idx, idx, 20)  # Ajuster la largeur de la colonne
 
             # Écrire les données du tableau avec bordures
-            for row_idx, row in enumerate(table.itertuples(index=False, name=None)):
+            for row_idx, row in enumerate(table.itertuples(index=True, name=None)):
                 for col_idx, value in enumerate(row):
                     worksheet.write(row_idx + empty_row + 2, col_idx, value, border_format)
 
