@@ -128,6 +128,6 @@ def to_excel(tables, questions):
     
 # Bouton de téléchargement
 excel_data = to_excel(tables, questions)
-st.download_button(label="Télécharger les données", data=excel_data, file_name="BOB_2024-par_tranches_ages.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+st.download_button(label="Télécharger les données", data=excel_data, file_name="BOB_2024-tranche_d'ages.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                    help="Cliquez ici pour télécharger les données au format XLSX")
 
