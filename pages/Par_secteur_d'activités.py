@@ -9,7 +9,7 @@ from io import BytesIO
 
 st.set_page_config(
     page_title="BOB 2024 - Par secteur d'activités",
-    page_icon=	:chart_with_upwards_trend:,
+    page_icon=	":chart_with_upwards_trend:",
     layout="wide")
 
 st.markdown("# Résultats par secteur d'activités")
