@@ -6,7 +6,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="BOB 2024",
-    page_icon="🧊",
+    page_icon="	:chart_with_upwards_trend:",
     layout="wide")
 
 st.image('RSIEDH.png',width = 500)
